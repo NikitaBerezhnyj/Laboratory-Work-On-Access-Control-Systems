@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстраційна форма</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Реєстрація</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="firstName">Ім'я:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <div class="error-message" id="firstNameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Прізвище:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <div class="error-message" id="lastNameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error-message" id="passwordError"></div>
+                <div class="show-password">
+                    <input type="checkbox" id="showPassword">
+                    <label for="showPassword">Показати пароль</label>
+                </div>
+            </div>
+
+            <button type="submit" id="submitButton" disabled>Зареєструватися</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
