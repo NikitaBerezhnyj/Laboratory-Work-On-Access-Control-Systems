@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Webapp з шифруванням</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="login-page" class="page">
+            <h2>Авторизація</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Логін" required>
+                <input type="password" id="login-password" placeholder="Пароль" required>
+                <button type="submit">Увійти</button>
+                <a href="#" id="register-link">Реєстрація</a>
+            </form>
+        </div>
+
+        <div id="register-page" class="page" style="display:none;">
+            <h2>Реєстрація</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Логін" required>
+                <input type="password" id="register-password" placeholder="Пароль" required>
+                <input type="text" id="register-name" placeholder="Ім'я" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <button type="submit">Зареєструватися</button>
+                <a href="#" id="login-link">Ввійти</a>
+            </form>
+        </div>
+
+        <div id="user-page" class="page" style="display:none;">
+            <h2>Сторінка Користувача</h2>
+            <div id="user-info"></div>
+            <h3>Про симетричне шифрування</h3>
+            <p>Симетричне шифрування використовує один і той самий ключ для шифрування та розшифрування даних. Це
+                швидкий метод захисту інформації.</p>
+            <button id="logout-btn">Вихід</button>
+        </div>
+
+        <div id="admin-page" class="page" style="display:none;">
+            <h2>Сторінка Адміністратора</h2>
+            <table id="users-table">
+                <thead>
+                    <tr>
+                        <th>Логін</th>
+                        <th>Пароль</th>
+                        <th>Ім'я</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="users-list"></tbody>
+            </table>
+            <button id="admin-logout-btn">Вихід</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

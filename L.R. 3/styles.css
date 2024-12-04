@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+#app {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    max-height: 400px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page {
+    text-align: center;
+}
+
+#login-form {
+    width: 90%;
+    margin: auto;
+}
+
+input {
+    width: 95%;
+    padding: 10px 5px;
+    color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+input:active {
+    border-color: #4CAF50;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: all .5s ease;
+}
+
+button:hover {
+    background-color: #2b642d;
+}
+
+a {
+    color: #4CAF50;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    font-weight: bolder;
+    color: #2b642d;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+td,
+th {
+    overflow-x: scroll;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
